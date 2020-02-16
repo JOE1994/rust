@@ -147,6 +147,8 @@ pub fn run_passes(
     let phase_index = mir_phase.phase_index();
 
     if body.phase >= mir_phase {
+        debug!("MIRPhase of body should be earlier than {:?}.", mir_phase); 
+        debug!("Returning without running passes.");
         return;
     }
 

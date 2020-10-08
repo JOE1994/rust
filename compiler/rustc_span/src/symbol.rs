@@ -950,6 +950,7 @@ symbols! {
         self_in_typedefs,
         self_struct_ctor,
         semitransparent,
+        send,
         send_trait,
         shl,
         shl_assign,
